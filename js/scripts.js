@@ -1,5 +1,19 @@
 $(document).ready(function () {
 
+    /***************** Hero Image Height Calculation ******************/
+    function setHeroHeight() {
+        var img = new Image();
+        img.src = 'img/013A0311.jpg';
+        img.onload = function() {
+            var aspectRatio = this.height / this.width;
+            var windowWidth = $(window).width();
+            var calculatedHeight = windowWidth * aspectRatio;
+            $('.hero').css('min-height', calculatedHeight + 'px');
+        };
+    }
+    setHeroHeight();
+    $(window).on('resize', setHeroHeight);
+
     /***************** Waypoints ******************/
 
     $('.wp1').waypoint(function () {
