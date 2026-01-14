@@ -205,10 +205,10 @@ $(document).ready(function () {
             // end: new Date('Mar 7, 2026 16:00'),
 
             // Event Address
-            address: 'Ark Pentecostal Holiness Church, One Commonwealth #08-19/20/21, Singapore 149544',
+            address: 'One Commonwealth #08-21, Singapore 149544',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Ms. Helen Keung at +65 8805 0272."
+            description: "We can't wait to see you on our big day. For any queries or issues, please contact Ms. Lam at +65 8371 0533."
         }
     });
 
@@ -222,11 +222,11 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
+        if (MD5($('#invite_code').val()) !== '903ce9225fca3e988c2af215d4e544d3'
+            && MD5($('#invite_code').val()) !== '903ce9225fca3e988c2af215d4e544d3') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbwan_g2ak8KUinDSKzumShFTa7vcbJ3IRXafXi6F6SWaoEY5A2tSmca5d_Se7WhMli9/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbwY4B1re5pSwBaYzCQnDcoxWj1Q3aYiMAnGSti1wxrtMgPtpezoXCRo2F3luisvE6U7/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {

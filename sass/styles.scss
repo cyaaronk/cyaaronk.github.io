@@ -293,7 +293,7 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, .88);
+  background-color: rgba(220, 240, 255, .88);
   z-index: 999;
   width: 100%;
 }
@@ -404,6 +404,16 @@ Intro
   img {
     width: 100%;
     height: auto;
+  }
+  .wp1, .wp2 {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .wp8, .wp9 {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
   }
 }
 #intro p {
